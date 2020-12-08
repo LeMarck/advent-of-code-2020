@@ -6,3 +6,4 @@
 * [**Day 4: Passport Processing**](day_4)
 * [**Day 5: Binary Boarding**](day_5)
 * [**Day 6: Custom Customs**](day_6)
+* [**Day 7: Handy Haversacks**](day_7)
