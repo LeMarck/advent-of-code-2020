@@ -1,6 +1,6 @@
 import 'data.dart';
 
-getTwoSumIndexes(List<int> nums, int target) {
+List<int> getTwoNumsOfTarget(List<int> nums, int target) {
   Map<int, int> buffer = {};
 
   for (int index = 0, len = nums.length; index < len; index++) {
@@ -8,16 +8,16 @@ getTwoSumIndexes(List<int> nums, int target) {
     int offset = target - num;
 
     if (buffer[offset] != null) {
-      return [buffer[offset], index];
+      return [nums[buffer[offset]], nums[index]];
     }
 
     buffer[num] = index;
   }
 
-  return null;
+  return [];
 }
 
 void main() {
-  List<int> indexes = getTwoSumIndexes(nums, 2020);
-  print(nums[indexes[0]] * nums[indexes[1]]);
+  List<int> numsOfTarget = getTwoNumsOfTarget(nums, 2020);
+  print(numsOfTarget[0] * numsOfTarget[1]);
 }

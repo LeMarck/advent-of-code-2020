@@ -1,15 +1,12 @@
 import 'data.dart';
+import 'task_1.dart';
 
-int repair(List<int> nums, int target) {
-  for (int i = 0, len = nums.length; i < len - 1; i++) {
-    for (int j = i; j < len; j++) {
-      int a = nums[i];
-      int b = nums[j];
-      int offset = target - a - b;
+int calc(List<int> nums, int target) {
+  for (int index = 0, len = nums.length; index < len - 1; index++) {
+    List<int> numsOfTarget = getTwoNumsOfTarget(nums, target - nums[index]);
 
-      if (nums.contains(offset)) {
-        return offset * a * b;
-      }
+    if (numsOfTarget.length != 0) {
+      return nums[index] * numsOfTarget[0] * numsOfTarget[1];
     }
   }
 
@@ -17,5 +14,5 @@ int repair(List<int> nums, int target) {
 }
 
 void main() {
-  print(repair(nums, 2020));
+  print(calc(nums, 2020));
 }

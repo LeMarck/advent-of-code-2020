@@ -1,20 +1,20 @@
 import 'data.dart';
 import '../day_1/task_1.dart';
 
-getInvalidNumIndex() {
-  int preamble = 25;
+int getInvalidNum(List<int> nums, int preamble) {
   for (int index = preamble; index < nums.length; index++) {
     int num = nums[index];
-    List<int> indexes = getTwoSumIndexes(nums.sublist(index - preamble, index), num);
+    List<int> indexes =
+        getTwoNumsOfTarget(nums.sublist(index - preamble, index), num);
 
-    if (indexes == null) {
+    if (indexes.length == 0) {
       return num;
     }
   }
 
-  return null;
+  return 0;
 }
 
 void main() {
-  print(getInvalidNumIndex());
+  print(getInvalidNum(nums, 25));
 }

@@ -1,11 +1,18 @@
 import 'data.dart';
 
-void main() {
-  int acc = 0;
-  int index = 0;
-  List<int> visits = [];
+class Result {
+  int acc;
+  bool isInfinity;
 
-  while(!visits.contains(index)) {
+  Result(this.acc, this.isInfinity);
+}
+
+Result checkPath(List<int> visits, int acc, int index) {
+  while(index < instructions.length) {
+    if (visits.contains(index)) {
+      return new Result(acc, true);
+    }
+
     Instruction instruction = instructions[index];
     visits.add(index);
 
@@ -23,5 +30,11 @@ void main() {
     }
   }
 
-  print(acc);
+  return new Result(acc, false);
+}
+
+void main() {
+  Result data = checkPath([], 0, 0);
+
+  print(data.acc);
 }
