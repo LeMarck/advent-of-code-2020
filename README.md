@@ -10,3 +10,4 @@
 * [**Day 6: Custom Customs**](day_6)
 * [**Day 7: Handy Haversacks**](day_7)
 * [**Day 8: Handheld Halting**](day_8)
+* [**Day 9: Encoding Error**](day_9)

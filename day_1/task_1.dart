@@ -1,22 +1,23 @@
 import 'data.dart';
 
-int repair(List<int> nums, int target) {
-  Map<int, bool> buffer = {};
+getTwoSumIndexes(List<int> nums, int target) {
+  Map<int, int> buffer = {};
 
   for (int index = 0, len = nums.length; index < len; index++) {
     int num = nums[index];
     int offset = target - num;
 
     if (buffer[offset] != null) {
-      return offset * num;
+      return [buffer[offset], index];
     }
 
-    buffer[num] = true;
+    buffer[num] = index;
   }
 
-  return 0;
+  return null;
 }
 
 void main() {
-  print(repair(nums, 2020));
+  List<int> indexes = getTwoSumIndexes(nums, 2020);
+  print(nums[indexes[0]] * nums[indexes[1]]);
 }
