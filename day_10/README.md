@@ -92,6 +92,7 @@ In this larger example, in a chain that uses all of the adapters, there are **`2
 Find a chain that uses all of your adapters to connect the charging outlet to your device's built-in adapter and count the joltage differences between the charging outlet, the adapters, and your device. **What is the number of 1-jolt differences multiplied by the number of 3-jolt differences?**
 
 ## Part Two
+
 To completely determine whether you have enough adapters, you'll need to figure out how many different ways they can be arranged. Every arrangement needs to connect the charging outlet to your device. The previous rules about when adapters can successfully connect still apply.
 
 The first example above (the one that starts with 16, 10, 15) supports the following arrangements:

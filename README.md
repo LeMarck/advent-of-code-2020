@@ -12,3 +12,4 @@
 * [**Day 8: Handheld Halting**](day_8)
 * [**Day 9: Encoding Error**](day_9)
 * [**Day 10: Adapter Array**](day_10)
+* [**Day 11: Seating System**](day_11)
