@@ -13,3 +13,4 @@
 * [**Day 9: Encoding Error**](day_9)
 * [**Day 10: Adapter Array**](day_10)
 * [**Day 11: Seating System**](day_11)
+* [**Day 12: Rain Risk**](day_12)
