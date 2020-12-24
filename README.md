@@ -14,3 +14,5 @@
 * [**Day 10: Adapter Array**](day_10)
 * [**Day 11: Seating System**](day_11)
 * [**Day 12: Rain Risk**](day_12)
+* [**Day 12: Rain Risk**](day_12)
+* [**Day 13: Shuttle Search**](day_13)
